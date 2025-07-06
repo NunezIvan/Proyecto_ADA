@@ -413,7 +413,6 @@ def quick_sort(arr):
         if 'niveles_anidamiento' in detalles:
             texto += f"- Nivel máximo de anidamiento: {max(detalles['niveles_anidamiento'].keys(), default=0)}\n"
         
-        texto += f"- Operaciones primitivas: {detalles.get('operaciones', 0)}\n"
         texto += f"- Condicionales: {detalles.get('condicionales', 0)}\n"
         texto += f"- Llamadas a funciones: {detalles.get('llamadas_funciones', 0)}\n"
         
@@ -794,8 +793,6 @@ Recomendaciones:
         info_tiempo = f"""
 INFORMACIÓN DE TIEMPO DE EJECUCIÓN
 ==================================
-
-Operaciones Elementales (OE) totales: {total_oe}
 
 Detalles del cálculo:
 • Cada operación elemental (OE) toma 1 unidad de tiempo
